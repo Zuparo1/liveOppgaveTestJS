@@ -1,6 +1,6 @@
 // TODO: Not implemented
 const fakerMock: Faker = {
-  id,
+  id ,
   answer,
   score,
   category,
