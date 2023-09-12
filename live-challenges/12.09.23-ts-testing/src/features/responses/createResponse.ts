@@ -1,4 +1,5 @@
 import { CreateResponses, Faker } from "./types"
+import {map} from "zod";
 
 const fakeAnswers: string[] = [
   "GlitterGlo Lipstick",
@@ -21,10 +22,10 @@ const getRandomId = () => {
 
 // TODO: Oppgave 1 - Not implemented
 const faker: Faker = {
-  id,
-  answer,
-  score,
-  category,
+  id : String,
+  answer : String,
+  score : Number,
+  category : String,
 }
 
 // TODO: Oppgave 1 - Not implemented
@@ -33,6 +34,10 @@ const createResponses: CreateResponses = ({
   count,
   faker,
 }) => {
+  let responses = new Map<string,Response>;
+  for (let a = 0; a < count; a++ ) {
+    
+  }
   return responses
 }
 
